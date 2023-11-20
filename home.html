@@ -3,10 +3,11 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>HereIsWhatIAteToday</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
     <script src="emoji.js"></script>
     <style>
         body {
@@ -19,16 +20,18 @@
         }
 
         a {
-            cursor: none;
+            cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>👆</text></svg>") 16 0,auto !important;
+            text-decoration: none;
+            color: black;
         }
 
         h1 {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 24px;
+            font-family: 'Inter', sans-serif;
+            font-size: 36px;
         }
 
         p {
-            font-family: 'Space Mono', monospace;
+            font-family: 'Inter', sans-serif;
             font-size: 12px
         }
 
@@ -49,13 +52,18 @@
             font-weight: 300;
             font-size: 10px;
         }
+
+        img.animatedgif{
+            width: 500px;
+            height: auto;
+          }
     </style>
 </head>
 <body>
     <div class="container" onclick="createEmoji(event)">
         <div class="textcontainer">
             <h1>
-                Here Is What I Ate Today
+                <a href="http://instagram.com/armmmond/">Here Is What I Ate Today</a>
             </h1>
             <p>
                 This is what I ate today.
@@ -65,19 +73,19 @@
             <h2>
                 Chicken Sandwich : November 19, 2023
             </h2>
-            <img src="/Users/armondschneider/Desktop/hereiswhatiate.today/images/chickensandwich.gif" alt="cheesesteak">
+            <img class="animatedgif" src="chickensandwich.gif">
         </div>
         <div class="spinningfoodcontainer">
             <h2>
                 Edamame : November 19, 2023
             </h2>
-            <img src="/Users/armondschneider/Desktop/hereiswhatiate.today/images/edamame11192023.gif" alt="cheesesteak">
+            <img class="animatedgif" src ="edamame11192023.gif">
         </div>
         <div class="spinningfoodcontainer">
             <h2>
                 Cheesesteak : November 16, 2023
             </h2>
-            <img src="/Users/armondschneider/Desktop/hereiswhatiate.today/images/cheestake11192023.gif" alt="cheesesteak">
+            <img class="animatedgif" src="cheestake11192023.gif">
         </div>
     </div>
 </body>
