@@ -1,0 +1,61 @@
+body, html {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>↖️</text></svg>") 16 0,auto !important;
+    background-color: rgb(251, 251, 251);  
+  }
+
+body {
+    margin: 0;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .emoji {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    animation: fall 1s linear;
+  }
+  
+  @keyframes fall {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(50vh); opacity: 1; }
+  }
+
+a {
+      cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>👆</text></svg>") 16 0,auto !important;
+      text-decoration: none;
+      color: black;
+  }
+
+h1 {
+      font-family: 'Inter', sans-serif;
+      font-size: 36px;
+  }
+
+p {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px
+  }
+
+  .textcontainer {
+      margin: 50px;
+      margin-bottom: 100px;
+      text-align: center;
+  }
+
+  .spinningfoodcontainer {
+      margin: 50px;
+      justify-content: center;
+      text-align: center;
+  }
+
+h2 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+  }
+
+img.animatedgif{
+      width: 500px;
+      height: auto;
+    }
