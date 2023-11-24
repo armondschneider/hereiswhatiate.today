@@ -28,7 +28,7 @@ function generateEmojis(x, y) {
 
 function generateEmoji(x, y) {
   const emoji = document.createElement('div');
-  const emojis = ['🍔', '🥨', '🌭', '❤️', '🍖'];
+  const emojis = ['🍔', '🥨', '🤪', '❤️', '🍖'];
 
   emoji.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
   emoji.classList.add('emoji');
